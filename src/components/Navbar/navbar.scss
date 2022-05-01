@@ -1,0 +1,64 @@
+.navbar {
+    padding: 20px 0;
+    background-color: rgb(22, 135, 33);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__logo {
+        color: #fbc7cf;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    &__toggle {
+        display: none;
+    }
+
+    &__menu {
+        font-family: 'Zilla Slab', serif;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__menu-link {
+        color: #fff;
+        transition: 0.2s ease;
+
+        &.active,
+        &:hover {
+            color: #e3f0ab;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .navbar {
+        &__toggle {
+            display: block;
+        }
+        &__menu {
+            display:none;
+
+            &--show {
+                padding-top: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                width: 100%;
+
+            }
+        }
+    }
+}
