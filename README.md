@@ -1,1 +1,1 @@
-##  https://nurgulchik.github.io/portfolio/
+##  https://nurgulchik.github.io/portfolio/index.html
